@@ -124,12 +124,20 @@
 		93A07057214D4DDE004CD2A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93A86A23215033AC00C740B5 /* NogNietNodig */,
 				93A07052214D2D56004CD2A5 /* MasterTableViewController.swift */,
 				93B02F99214D69AB00826AB6 /* DetailViewController.swift */,
-				937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */,
-				937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		93A86A23215033AC00C740B5 /* NogNietNodig */ = {
+			isa = PBXGroup;
+			children = (
+				937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */,
+				937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */,
+			);
+			path = NogNietNodig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
