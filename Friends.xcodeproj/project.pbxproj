@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937E98E3214FC81000C80914 /* WoonplaatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */; };
+		937E98E7214FC87C00C80914 /* FavorietenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */; };
 		93A07041214D287F004CD2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A07040214D287F004CD2A5 /* AppDelegate.swift */; };
 		93A07046214D287F004CD2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A07044214D287F004CD2A5 /* Main.storyboard */; };
 		93A07048214D2880004CD2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A07047214D2880004CD2A5 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		23C0C8E66D54922E30F4AA23 /* Pods-Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.release.xcconfig"; path = "Target Support Files/Pods-Friends/Pods-Friends.release.xcconfig"; sourceTree = "<group>"; };
 		6E4B6FC21FE7B8E1FFBFF680 /* Pods_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7096BA66E30D3BC15A16C4F5 /* Pods-Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.debug.xcconfig"; path = "Target Support Files/Pods-Friends/Pods-Friends.debug.xcconfig"; sourceTree = "<group>"; };
+		937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoonplaatsViewController.swift; sourceTree = "<group>"; };
+		937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorietenTableViewController.swift; sourceTree = "<group>"; };
 		93A0703D214D287F004CD2A5 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A07040214D287F004CD2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A07045214D287F004CD2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				93A07052214D2D56004CD2A5 /* MasterTableViewController.swift */,
 				93B02F99214D69AB00826AB6 /* DetailViewController.swift */,
+				937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */,
+				937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937E98E7214FC87C00C80914 /* FavorietenTableViewController.swift in Sources */,
 				93A07059214D4DF8004CD2A5 /* Friend.swift in Sources */,
+				937E98E3214FC81000C80914 /* WoonplaatsViewController.swift in Sources */,
 				93A07041214D287F004CD2A5 /* AppDelegate.swift in Sources */,
 				93A07053214D2D56004CD2A5 /* MasterTableViewController.swift in Sources */,
 				93B02F9A214D69AB00826AB6 /* DetailViewController.swift in Sources */,

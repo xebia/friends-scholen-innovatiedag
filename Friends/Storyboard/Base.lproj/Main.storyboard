@@ -50,11 +50,10 @@
             </objects>
             <point key="canvasLocation" x="1935.2" y="105.66502463054188"/>
         </scene>
-        <!--FavoritesViewController-->
+        <!--FavorietenViewController-->
         <scene sceneID="6iJ-iS-Rh0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Orj-XN-cjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="gCI-KO-oRV" userLabel="FavoritesViewController" sceneMemberID="viewController">
+                <tableViewController id="gCI-KO-oRV" userLabel="FavorietenViewController" customClass="FavorietenTableViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wds-Rf-NFh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,13 +75,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorieten" id="jb5-zw-fX8"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Orj-XN-cjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1935" y="848"/>
         </scene>
         <!--Woonplaats-->
         <scene sceneID="fc5-RD-kEW">
             <objects>
-                <viewController id="gDe-Lq-ftW" sceneMemberID="viewController">
+                <viewController id="gDe-Lq-ftW" customClass="WoonplaatsViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YrB-C5-P3Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,9 @@
                         <viewLayoutGuide key="safeArea" id="Gw6-51-6wz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Woonplaats" id="HGj-xu-Bvx"/>
+                    <connections>
+                        <outlet property="mapView" destination="FkW-BL-Lc6" id="GgV-ix-rRX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEg-do-YKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,6 +260,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7cH-Ce-DGm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xLv-O7-vPX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
