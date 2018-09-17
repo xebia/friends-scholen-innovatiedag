@@ -92,9 +92,9 @@
 		93A07054214D2E1F004CD2A5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				93A07057214D4DDE004CD2A5 /* View */,
 				93A07040214D287F004CD2A5 /* AppDelegate.swift */,
 				93A07058214D4DF8004CD2A5 /* Friend.swift */,
-				93A07057214D4DDE004CD2A5 /* View */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
