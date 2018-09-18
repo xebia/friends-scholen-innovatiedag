@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="izd-ih-fa1" id="YH9-N5-ZJn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="VxH-Nd-eCp"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="VxH-Nd-eCp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj5-ML-BP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +73,7 @@
                             <outlet property="delegate" destination="gCI-KO-oRV" id="0KI-VJ-hyC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorieten" id="jb5-zw-fX8"/>
+                    <navigationItem key="navigationItem" title="Favorieten" largeTitleDisplayMode="always" id="jb5-zw-fX8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orj-XN-cjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,14 +93,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FkW-BL-Lc6" firstAttribute="leading" secondItem="Gw6-51-6wz" secondAttribute="leading" id="5kv-ej-xVL"/>
-                            <constraint firstItem="Gw6-51-6wz" firstAttribute="bottom" secondItem="FkW-BL-Lc6" secondAttribute="bottom" id="7oS-Sh-WUi"/>
-                            <constraint firstItem="Gw6-51-6wz" firstAttribute="trailing" secondItem="FkW-BL-Lc6" secondAttribute="trailing" id="DyH-FQ-SkQ"/>
-                            <constraint firstItem="FkW-BL-Lc6" firstAttribute="top" secondItem="Gw6-51-6wz" secondAttribute="top" id="ilW-iW-NmH"/>
+                            <constraint firstItem="FkW-BL-Lc6" firstAttribute="leading" secondItem="bpC-v4-Czf" secondAttribute="leading" id="5kv-ej-xVL"/>
+                            <constraint firstItem="bpC-v4-Czf" firstAttribute="bottom" secondItem="FkW-BL-Lc6" secondAttribute="bottom" id="7oS-Sh-WUi"/>
+                            <constraint firstItem="bpC-v4-Czf" firstAttribute="trailing" secondItem="FkW-BL-Lc6" secondAttribute="trailing" id="DyH-FQ-SkQ"/>
+                            <constraint firstItem="FkW-BL-Lc6" firstAttribute="top" secondItem="bpC-v4-Czf" secondAttribute="top" id="ilW-iW-NmH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gw6-51-6wz"/>
+                        <viewLayoutGuide key="safeArea" id="bpC-v4-Czf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Woonplaats" id="HGj-xu-Bvx"/>
+                    <navigationItem key="navigationItem" title="Woonplaats" largeTitleDisplayMode="always" id="HGj-xu-Bvx"/>
                     <connections>
                         <outlet property="mapView" destination="FkW-BL-Lc6" id="GgV-ix-rRX"/>
                     </connections>
@@ -135,10 +135,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfF-eb-gce">
-                                <rect key="frame" x="0.0" y="-34" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrH-iK-3XQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erj-K0-EUs">
                                                 <rect key="frame" x="112.66666666666669" y="50" width="150" height="150"/>
@@ -218,13 +218,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KfF-eb-gce" firstAttribute="width" secondItem="7K8-HV-ku8" secondAttribute="width" id="1vg-Cq-qSQ"/>
-                            <constraint firstItem="KfF-eb-gce" firstAttribute="bottom" secondItem="QK0-UX-wZd" secondAttribute="bottom" id="4dQ-my-2kK"/>
-                            <constraint firstItem="KfF-eb-gce" firstAttribute="height" secondItem="7K8-HV-ku8" secondAttribute="height" id="59Z-f6-4GN"/>
-                            <constraint firstItem="KfF-eb-gce" firstAttribute="leading" secondItem="7K8-HV-ku8" secondAttribute="leading" id="T2R-0Q-bHW"/>
+                            <constraint firstItem="KfF-eb-gce" firstAttribute="bottom" secondItem="C9R-ZY-oDq" secondAttribute="bottom" id="4dQ-my-2kK"/>
+                            <constraint firstItem="KfF-eb-gce" firstAttribute="height" secondItem="7K8-HV-ku8" secondAttribute="height" constant="-122" id="59Z-f6-4GN"/>
+                            <constraint firstItem="KfF-eb-gce" firstAttribute="leading" secondItem="C9R-ZY-oDq" secondAttribute="leading" id="T2R-0Q-bHW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QK0-UX-wZd"/>
+                        <viewLayoutGuide key="safeArea" id="C9R-ZY-oDq"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Hwc-S5-Dj4">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="star" largeContentSizeImage="star" id="XqF-jr-nvJ">
+                            <connections>
+                                <action selector="favorietenKnopGedrukt:" destination="sVz-yY-n2F" id="jIo-kD-2St"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="favorietenKnop" destination="XqF-jr-nvJ" id="ThR-8g-6oz"/>
                         <outlet property="geslachtLabel" destination="Erj-K0-EUs" id="Og9-6o-Wlb"/>
                         <outlet property="leeftijdLabel" destination="sA8-jO-zCU" id="s83-VY-aYd"/>
                         <outlet property="voornaamLabel" destination="SWn-yG-883" id="4xD-cZ-vaw"/>
@@ -232,6 +240,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wn5-yo-ty3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="aeW-bN-99o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="c0f-Z3-4Io"/>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="2860" y="106.40394088669952"/>
         </scene>
@@ -288,4 +301,7 @@
             <point key="canvasLocation" x="1025" y="1616"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star" width="28" height="28"/>
+    </resources>
 </document>
