@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52904CDC215506690045AF83 /* ToevoegenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52904CDB215506690045AF83 /* ToevoegenViewController.swift */; };
 		937E98E3214FC81000C80914 /* WoonplaatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */; };
 		937E98E7214FC87C00C80914 /* FavorietenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E98E6214FC87C00C80914 /* FavorietenTableViewController.swift */; };
 		93A07041214D287F004CD2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A07040214D287F004CD2A5 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		23C0C8E66D54922E30F4AA23 /* Pods-Friends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.release.xcconfig"; path = "Target Support Files/Pods-Friends/Pods-Friends.release.xcconfig"; sourceTree = "<group>"; };
+		52904CDB215506690045AF83 /* ToevoegenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToevoegenViewController.swift; sourceTree = "<group>"; };
 		6E4B6FC21FE7B8E1FFBFF680 /* Pods_Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7096BA66E30D3BC15A16C4F5 /* Pods-Friends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends.debug.xcconfig"; path = "Target Support Files/Pods-Friends/Pods-Friends.debug.xcconfig"; sourceTree = "<group>"; };
 		937E98E2214FC81000C80914 /* WoonplaatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoonplaatsViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				93A86A23215033AC00C740B5 /* NogNietNodig */,
 				93A07052214D2D56004CD2A5 /* MasterTableViewController.swift */,
 				93B02F99214D69AB00826AB6 /* DetailViewController.swift */,
+				52904CDB215506690045AF83 /* ToevoegenViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				937E98E7214FC87C00C80914 /* FavorietenTableViewController.swift in Sources */,
 				93A07059214D4DF8004CD2A5 /* Friend.swift in Sources */,
+				52904CDC215506690045AF83 /* ToevoegenViewController.swift in Sources */,
 				937E98E3214FC81000C80914 /* WoonplaatsViewController.swift in Sources */,
 				93A07041214D287F004CD2A5 /* AppDelegate.swift in Sources */,
 				93A07053214D2D56004CD2A5 /* MasterTableViewController.swift in Sources */,

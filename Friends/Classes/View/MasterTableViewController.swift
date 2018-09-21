@@ -70,6 +70,9 @@ class MasterTableViewController: UITableViewController {
             let selectedFriendToPresent = selectedFriend {
             detailViewController.friend = selectedFriendToPresent
         }
+        if let toevoegenViewController = segue.destination as? ToevoegenViewController {
+            toevoegenViewController.masterViewController = self
+        }
     }
 
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
@@ -79,6 +82,13 @@ class MasterTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // Adding Friends
+    
+    func addFriend(_ friend: Friend) {
+        self.friends.append(friend)
+        tableView.reloadData()
     }
 
 }
