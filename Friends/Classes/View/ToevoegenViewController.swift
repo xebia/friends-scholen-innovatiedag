@@ -16,18 +16,15 @@ class ToevoegenViewController: UIViewController {
     @IBOutlet weak var acherNaamField: UITextField!
     @IBOutlet weak var leeftijdField: UITextField!
     @IBOutlet weak var woonplaatsField: UITextField!
-    @IBOutlet weak var kleurRozeButton: UIButton!
-    @IBOutlet weak var kleurBlauwButton: UIButton!
-    @IBOutlet weak var kleurGeelButton: UIButton!
-    @IBOutlet weak var kleurGroenButton: UIButton!
-    @IBOutlet weak var kleurRoodButton: UIButton!
-    @IBOutlet weak var opleidingField: UITextField!
+    @IBOutlet weak var opleidingsField: UITextField!
     @IBOutlet weak var hobbysField: UITextField!
-    @IBOutlet weak var haarKleurZwartButton: UIButton!
-    @IBOutlet weak var haarKleurBruinButton: UIButton!
-    @IBOutlet weak var haarKleurBlondButton: UIButton!
-    @IBOutlet weak var geslachtVrouwButton: UIButton!
-    @IBOutlet weak var geslachtManButton: UIButton!
+    
+//    @IBOutlet weak var haarKleurZwartButton: UIButton!
+//    @IBOutlet weak var haarKleurBruinButton: UIButton!
+//    @IBOutlet weak var haarKleurBlondButton: UIButton!
+//    @IBOutlet weak var geslachtVrouwButton: UIButton!
+//    @IBOutlet weak var geslachtManButton: UIButton!
+    var lievelingsKleur: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,27 +34,31 @@ class ToevoegenViewController: UIViewController {
     
 
     @IBAction func voegtoeKnop(_ sender: Any) {
-        var friend = Friend(
-            voornaam: naamField.text!,
-            achternaam:acherNaamField.text!,
-            woonplaats: woonplaatsField.text!,
-            leeftijd: Int(leeftijdField.text!)!,
+        let friend = Friend(
+            voornaam: naamField.text ?? "",
+            achternaam:acherNaamField.text ?? "",
+            woonplaats: woonplaatsField.text ?? "",
+            leeftijd: Int(leeftijdField.text!) ?? 11,
             geslacht: .man,
-            lievelingskleur: .blue
-        )
-        navigationController?.popViewController(animated: true)
+            lievelingskleur: self.lievelingsKleur ?? #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1),
+            hobbys: hobbysField.text ?? "",
+            opleiding: opleidingsField.text ?? "",
+            haarkleur: haarkleur.blond)
         
     masterViewController!.addFriend(friend)
+    navigationController?.popViewController(animated: true)
+    }
+
+
+    @IBAction func rozeKnopjes(_ sender: UIButton) {
+        lievelingsKleur = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func blauwKnopje(_ sender: UIButton) {
+        lievelingsKleur = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     }
-    */
-
+    
+    @IBAction func geelKnopje(_ sender: UIButton) {
+        lievelingsKleur = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+    }
 }

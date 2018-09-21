@@ -16,6 +16,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var voornaamLabel: UILabel!
     @IBOutlet weak var leeftijdLabel: UILabel!
     @IBOutlet weak var woonplaatsLabel: UILabel!
+    @IBOutlet weak var opleidingLabel: UILabel!
+    @IBOutlet weak var hobbyLabel: UILabel!
     @IBOutlet weak var toevoegKnop: UIBarButtonItem!
 
 
@@ -23,13 +25,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         title = friend.naam
-        geslachtLabel.text = friend.geslacht == .man ? "👦" : "👧"
+        geslachtLabel.text = friend.emoji
         voornaamLabel.text = friend.voornaam
         leeftijdLabel.text = "\(friend.leeftijd)"
         woonplaatsLabel.text = friend.woonplaats
+        hobbyLabel.text = friend.hobbys
+        opleidingLabel.text = friend.opleiding
+        view.backgroundColor = friend.lievelingskleur
     }
-    
-    
-
-
 }
